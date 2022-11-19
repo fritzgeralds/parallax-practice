@@ -1,3 +1,8 @@
+:root {
+  --header-font: 'Lobster', cursive;
+  --body-font: 'Open Sans', sans-serif;
+}
+
 *,
 ::before,
 ::after {
@@ -6,13 +11,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
+  font-family: var(--body-font);
   line-height: 1.5;
 }
 
@@ -20,10 +20,84 @@ body {
   border: none;
   background: rgba(255, 255, 255, 0.3);
   clip-path: circle();
-  padding: 1em;
+  padding: 0.5em;
+  font-size: 0.7rem;
 }
 
 .navbar-toggler:focus {
   outline: none;
 }
 
+.hero {
+  background-image: url(../img/green-bug.jpg);
+  height: 100vh;
+}
+
+.hero h1 {
+  font-family: var(--header-font);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.card {
+  background:rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-body {
+  font-size: 0.9rem;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-1 {
+  background-image: url(../img/hitchhike.jpg);
+  min-height: 90vh;
+}
+
+#section-2 {
+  background-image: url(../img/backpack.jpg);
+  width: 100%;
+}
+
+#section-3 {
+  background-image: url(../img/flannel.jpg);
+  width: 100%;
+}
+
+#section-4 {
+  background-image: url(../img/fall-trees.jpg);
+  width: 100%;
+}
+
+.navbar-nav {
+  background:rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+.fab {
+  background:rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  clip-path: circle();
+  color: white;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+
+}
