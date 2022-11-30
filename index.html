@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -26,35 +26,115 @@
     <script defer src="./js/index.js"></script>
   </head>
 
-  <body>
+  <body class="text-white">
     <header>
-      <nav class="navbar bg-transparent px-4 py-5">
+      <nav class="navbar bg-transparent fixed-top px-4">
         <div class="navbar-brand fs-4 fw-bold">
-          <a href="#" class="text-decoration-none">Road trip</a>
+          <a href="#hero" class="text-decoration-none text-white">Road trip</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span>&#9776;</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+          <ul class="navbar-nav d-inline-flex px-4 float-end mt-2">
+            <li class="nav-item border-bottom">
+              <a class="nav-link text-white" href="#hero">Home</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link text-white" href="#section-1">Section 1</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link text-white" href="#section-2">Section 2</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link text-white" href="#section-3">Section 3</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link text-white" href="#section-4">Section 4</a>
             </li>
           </ul>
         </div>
       </nav>
+      <section class="hero d-flex justify-content-center align-items-center parallax" id="hero">
+        <h1 class="fw-bold text-center">This is Road Trip</h1>
+        <a href="#section-1" class="arrow-down"><i class="fa-solid fa-chevron-down"></i></a>
+      </section>
     </header>
     <main>
-
+      <section class="section d-flex justify-content-center align-items-center parallax" id="section-1">
+        <div class="card d-flex justify-content-center align-items-center p-5 rounded-1">
+          <div class="card-title d-flex flex-column align-items-center">
+            <h2 class="text-uppercase fs-4 fw-bold mb-0">Nibh sed faucibus nibh lobortis the mouse,</h2>
+            <p class="date text-secondary mb-0">01.01.2017</p>
+          </div>
+          <div class="card-body text-light my-4">For thermal insulation in my care was ultricies carton until the chili
+            from the main entrance to the street front skirt and a developer chocolate manufacturing. At sauce pot
+            vulputate ullamcorper a film on the old lake beds hate them then enhanced by leo fermentum sit for the
+            present commoveo. Mus mauris eros dignissim tristique tincidunt urna in, for a natoque to the bow, hung up
+            the shores of chocolate peanut none at all from Suspend.</div>
+          <button class="btn border text-uppercase fw-bold h6 text-white">Learn More</button>
+        </div>
+        <a href="#section-2" class="arrow-down"><i class="fa-solid fa-chevron-down"></i></a>
+      </section>
+      <section class="section d-flex justify-content-center align-items-center parallax" id="section-2">
+        <div class="card d-flex justify-content-center align-items-center p-5 rounded-1">
+          <div class="card-title d-flex flex-column align-items-center">
+            <h2 class="text-uppercase fs-4 fw-bold mb-0">Competition from mouse ultricies</h2>
+            <p class="date text-secondary mb-0">12.21.2016</p>
+          </div>
+          <div class="card-body text-light my-4">For thermal insulation in my care was ultricies carton until the chili
+            from the main entrance to the street front skirt and a developer chocolate manufacturing. At sauce pot
+            vulputate ullamcorper a film on the old lake beds hate them then enhanced by leo fermentum sit for the
+            present commoveo. Mus mauris eros dignissim tristique tincidunt urna in, for a natoque to the bow, hung up
+            the shores of chocolate peanut none at all from Suspend.</div>
+          <button class="btn border text-uppercase fw-bold h6 text-white">Learn More</button>
+        </div>
+        <a href="#section-3" class="arrow-down"><i class="fa-solid fa-chevron-down"></i></a>
+      </section>
+      <section class="section d-flex justify-content-center align-items-center parallax" id="section-3">
+        <div class="card d-flex justify-content-center align-items-center p-5 rounded-1">
+          <div class="card-title d-flex flex-column align-items-center">
+            <h2 class="text-uppercase fs-4 fw-bold mb-0">Various running from bananas</h2>
+            <p class="date text-secondary mb-0">11.11.2016</p>
+          </div>
+          <div class="card-body text-light my-4">For thermal insulation in my care was ultricies carton until the chili
+            from the main entrance to the street front skirt and a developer chocolate manufacturing. At sauce pot
+            vulputate ullamcorper a film on the old lake beds hate them then enhanced by leo fermentum sit for the
+            present commoveo. Mus mauris eros dignissim tristique tincidunt urna in, for a natoque to the bow, hung up
+            the shores of chocolate peanut none at all from Suspend.</div>
+          <button class="btn border text-uppercase fw-bold h6 text-white">Learn More</button>
+        </div>
+        <a href="#section-4" class="arrow-down"><i class="fa-solid fa-chevron-down"></i></a>
+      </section>
+      <section class="section d-flex justify-content-center align-items-center parallax" id="section-4">
+        <div class="card d-flex justify-content-center align-items-center p-5 rounded-1">
+          <div class="card-title d-flex flex-column align-items-center">
+            <h2 class="text-uppercase fs-4 fw-bold mb-0">Mourning will sit on my bed</h2>
+            <p class="date text-secondary mb-0">10.30.2016</p>
+          </div>
+          <div class="card-body text-light my-4">For thermal insulation in my care was ultricies carton until the chili
+            from the main entrance to the street front skirt and a developer chocolate manufacturing. At sauce pot
+            vulputate ullamcorper a film on the old lake beds hate them then enhanced by leo fermentum sit for the
+            present commoveo. Mus mauris eros dignissim tristique tincidunt urna in, for a natoque to the bow, hung up
+            the shores of chocolate peanut none at all from Suspend.</div>
+          <button class="btn border text-uppercase fw-bold h6 text-white">Learn More</button>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="d-flex flex-column align-items-center bg-danger p-5">
+      <h2 class="text-uppercase fs-4 fw-bold p-5">Contact</h2>
+      <div class="d-flex">
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter"><i
+            class="fab fa-twitter fa-xl"></i></a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook"><i
+            class="fab fa-facebook-f fa-xl"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"><i
+            class="fab fa-instagram fa-xl"></i></a>
+      </div>
+      <p class="p-3 copyright">&copy; Untitled Design <a href="https://templated.co" target="_blank"
+          rel="noopener noreferrer" title="PAGE NO LONGER WORKS!" class="text-white">templated</a>. Images: <a
+          href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="text-white">Unsplash</a>.</p>
 
     </footer>
   </body>

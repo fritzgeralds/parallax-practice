@@ -1,3 +1,8 @@
+:root {
+  --header-font: 'Lobster', cursive;
+  --body-font: 'Open Sans', sans-serif;
+}
+
 *,
 ::before,
 ::after {
@@ -6,13 +11,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
+  font-family: var(--body-font);
   line-height: 1.5;
 }
 
@@ -20,10 +20,116 @@ body {
   border: none;
   background: rgba(255, 255, 255, 0.3);
   clip-path: circle();
-  padding: 1em;
+  padding: 0.7em;
+  color: #fff;
 }
 
 .navbar-toggler:focus {
   outline: none;
 }
 
+.hero {
+  background-image: url(../img/banner.jpg);
+  height: 100vh;
+}
+
+.hero h1 {
+  font-family: var(--header-font);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  font-size: 7em;
+  z-index: 2;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 2em 0;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.card {
+  background:rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.card-body {
+  font-size: 0.9rem;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-1 {
+  background-image: url(../img/banner1.jpg);
+  width: 100%;
+}
+
+#section-2 {
+  background-image: url(../img/banner2.jpg);
+  width: 100%;
+}
+
+#section-3 {
+  background-image: url(../img/banner3.jpg);
+  width: 100%;
+}
+
+#section-4 {
+  background-image: url(../img/banner4.jpg);
+  width: 100%;
+}
+
+.navbar-nav {
+  background:rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+.fab {
+  background:rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  clip-path: circle();
+  color: white;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+.arrow-down {
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.8rem;
+  clip-path: circle();
+  z-index: 2;
+}
+
+.navbar-toggler:hover,
+.arrow-down:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.5);
+}
